@@ -1,0 +1,17 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Business.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\bin\Debug\net8.0\Order.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.csproj.CopyComplete
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\refint\Order.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\Order.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Order.Business\obj\Debug\net8.0\ref\Order.Business.dll

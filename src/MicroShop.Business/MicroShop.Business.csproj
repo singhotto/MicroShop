@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="Utility.Kafka" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroShop.Client.Http\MicroShop.Client.Http.csproj" />
+	<ProjectReference Include="..\MicroShop.Shared\MicroShop.Shared.csproj" />
+	<ProjectReference Include="..\MicroShop.Repository\MicroShop.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

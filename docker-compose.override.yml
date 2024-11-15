@@ -1,0 +1,61 @@
+version: '3.4'
+
+services:
+  warehouse.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=desi
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/MicroShop.pfx
+    ports:
+      - "43092:80"
+      - "45092:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+  payment.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=desi
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/MicroShop.pfx
+    ports:
+      - "43192:80"
+      - "45192:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+
+  supply.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=desi
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/MicroShop.pfx
+    ports:
+      - "43292:80"
+      - "45292:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+
+  order.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=desi
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/MicroShop.pfx
+    ports:
+      - "43392:80"
+      - "45392:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+
+  microshop.webapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=desi
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/home/app/.aspnet/https/MicroShop.pfx
+    ports:
+      - "43492:80"
+      - "45492:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro

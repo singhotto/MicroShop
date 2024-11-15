@@ -1,0 +1,12 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\bin\Debug\net8.0\Payment.Repository.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\bin\Debug\net8.0\Payment.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\bin\Debug\net8.0\Payment.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\refint\Payment.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\Payment.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Repository\obj\Debug\net8.0\ref\Payment.Repository.dll

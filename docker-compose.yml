@@ -1,0 +1,101 @@
+version: '3.4'
+
+services:
+  mssql-server:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    environment:
+      TZ: Europe/Rome
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: p4ssw0rD
+    ports:
+      - 2433:1433
+    volumes:
+      - "mssql-server:/var/opt/mssql"
+  zookeeper:
+    container_name: zookeeper
+    image: 'bitnami/zookeeper:3.9.0'
+    ports:
+      - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  
+  kafka:
+    container_name: kafka
+    image: 'bitnami/kafka:3.1.0'
+    ports:
+      - '9092:9092'
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
+    depends_on:
+      - zookeeper
+  warehouse.api:
+    image: ${DOCKER_REGISTRY-}warehouseapi
+    build:
+      context: .
+      dockerfile: src/Warehouse.Api/Dockerfile
+    environment:
+      TZ: Europe/Rome
+    volumes:
+      - "./config/warehouseapi-appsettings.json:/app/appsettings.Development.json:ro"
+      - "./data/ProtectionKeys:/app/data/ProtectionKeys:ro"
+      - "./ASP.NET/Https:/home/app/.aspnet/https:ro"
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: src/Payment.Api/Dockerfile
+    environment:
+      TZ: Europe/Rome
+    volumes:
+      - "./config/paymentapi-appsettings.json:/app/appsettings.Development.json:ro"
+      - "./data/ProtectionKeys:/app/data/ProtectionKeys:ro"
+      - "./ASP.NET/Https:/home/app/.aspnet/https:ro"
+
+
+  supply.api:
+    image: ${DOCKER_REGISTRY-}supplyapi
+    build:
+      context: .
+      dockerfile: src/Supply.Api/Dockerfile
+    environment:
+      TZ: Europe/Rome
+    volumes:
+      - "./config/supplyapi-appsettings.json:/app/appsettings.Development.json:ro"
+      - "./data/ProtectionKeys:/app/data/ProtectionKeys:ro"
+      - "./ASP.NET/Https:/home/app/.aspnet/https:ro"
+
+
+  order.api:
+    image: ${DOCKER_REGISTRY-}orderapi
+    build:
+      context: .
+      dockerfile: src/Order.Api/Dockerfile
+    environment:
+      TZ: Europe/Rome
+    volumes:
+      - "./config/orderapi-appsettings.json:/app/appsettings.Development.json:ro"
+      - "./data/ProtectionKeys:/app/data/ProtectionKeys:ro"
+      - "./ASP.NET/Https:/home/app/.aspnet/https:ro"
+
+
+  microshop.webapp:
+    image: ${DOCKER_REGISTRY-}microshopwebapp
+    build:
+      context: .
+      dockerfile: src/MicroShop.Webapp/Dockerfile
+    environment:
+      TZ: Europe/Rome
+    volumes:
+      - "./config/microshop-appsettings.json:/app/appsettings.Development.json:ro"
+      - "./data/ProtectionKeys:/app/data/ProtectionKeys:ro"
+      - "./ASP.NET/Https:/home/app/.aspnet/https:ro"
+      
+volumes:
+  mssql-server:

@@ -1,0 +1,12 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\bin\Debug\net8.0\Warehouse.Shared.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\bin\Debug\net8.0\Warehouse.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\bin\Debug\net8.0\Warehouse.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\refint\Warehouse.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\Warehouse.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Shared\obj\Debug\net8.0\ref\Warehouse.Shared.dll

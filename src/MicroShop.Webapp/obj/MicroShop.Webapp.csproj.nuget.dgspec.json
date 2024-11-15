@@ -1,0 +1,416 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Webapp\\MicroShop.Webapp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Business\\MicroShop.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Business\\MicroShop.Business.csproj",
+        "projectName": "MicroShop.Business",
+        "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Business\\MicroShop.Business.csproj",
+        "packagesPath": "C:\\Users\\singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\NuGet.Config",
+          "C:\\Users\\singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/sexysingh8/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Client.Http\\MicroShop.Client.Http.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Client.Http\\MicroShop.Client.Http.csproj"
+              },
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj"
+              },
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Utility.Kafka": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Client.Http\\MicroShop.Client.Http.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Client.Http\\MicroShop.Client.Http.csproj",
+        "projectName": "MicroShop.Client.Http",
+        "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Client.Http\\MicroShop.Client.Http.csproj",
+        "packagesPath": "C:\\Users\\singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Client.Http\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\NuGet.Config",
+          "C:\\Users\\singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/sexysingh8/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj",
+        "projectName": "MicroShop.Repository",
+        "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj",
+        "packagesPath": "C:\\Users\\singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\NuGet.Config",
+          "C:\\Users\\singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/sexysingh8/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Utility.Kafka": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj",
+        "projectName": "MicroShop.Shared",
+        "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj",
+        "packagesPath": "C:\\Users\\singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\NuGet.Config",
+          "C:\\Users\\singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/sexysingh8/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Webapp\\MicroShop.Webapp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Webapp\\MicroShop.Webapp.csproj",
+        "projectName": "MicroShop.Webapp",
+        "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Webapp\\MicroShop.Webapp.csproj",
+        "packagesPath": "C:\\Users\\singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Webapp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\NuGet.Config",
+          "C:\\Users\\singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/sexysingh8/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Business\\MicroShop.Business.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Business\\MicroShop.Business.csproj"
+              },
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Repository\\MicroShop.Repository.csproj"
+              },
+              "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj": {
+                "projectPath": "C:\\Users\\singh\\OneDrive\\Documenti\\Source\\MicroShop\\src\\MicroShop.Shared\\MicroShop.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
+            "Utility.Kafka": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\bin\Debug\net8.0\Supply.Client.Http.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\bin\Debug\net8.0\Supply.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\bin\Debug\net8.0\Supply.Client.Http.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\bin\Debug\net8.0\Supply.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\bin\Debug\net8.0\Supply.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.csproj.CopyComplete
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\refint\Supply.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\Supply.Client.Http.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Supply.Client.Http\obj\Debug\net8.0\ref\Supply.Client.Http.dll

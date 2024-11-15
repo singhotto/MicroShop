@@ -1,0 +1,28 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "ConnectionStrings": {
+        "OrderDbContext": "Server=mssql-server;Database=ORDER;User Id=sa;Password=p4ssw0rD;Encrypt=False"
+    },
+    "Kafka": {
+        "ConsumerClient": {
+            "BootstrapServers": "kafka",
+            "GroupId": "ConsumerOrder"
+        },
+        "AdminClient": {
+            "BootstrapServers": "kafka"
+        },
+        "Topics": {
+            "Orders": "Orders",
+            "Products": "Products",
+            "Users": "Users"
+        }
+    },
+    "MicroShopClient": {
+        "BaseAddress": "microshop.webapp"
+    }
+}

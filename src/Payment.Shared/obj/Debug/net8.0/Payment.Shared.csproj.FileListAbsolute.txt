@@ -1,0 +1,11 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\bin\Debug\net8.0\Payment.Shared.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\bin\Debug\net8.0\Payment.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\bin\Debug\net8.0\Payment.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\Payment.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\Payment.Shared.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\Payment.Shared.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\Payment.Shared.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\Payment.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\refint\Payment.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\Payment.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Shared\obj\Debug\net8.0\ref\Payment.Shared.dll

@@ -1,0 +1,66 @@
+name: dockercompose8180311725826366132
+services:
+  mssql-server:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: p4ssw0rD
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "2433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mssql-server
+        target: /var/opt/mssql
+        volume: {}
+  supplyapi:
+    build:
+      context: C:\Users\singh\OneDrive\Documenti\Source\MicroShop
+      dockerfile: src/Supply.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ASPNETCORE_Kestrel__Certificates__Default__Password: tido30
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /home/app/.aspnet/https/otto-certificate.pfx
+      TZ: Europe/Rome
+    image: supplyapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\singh\OneDrive\Documenti\Source\MicroShop\config\supplyapi-appsettings.json
+        target: /app/appsettings.Development.json
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\OneDrive\Documenti\Source\MicroShop\Https-certificates
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose8180311725826366132_default
+volumes:
+  mssql-server:
+    name: dockercompose8180311725826366132_mssql-server

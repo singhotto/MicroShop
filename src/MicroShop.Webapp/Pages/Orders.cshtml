@@ -1,0 +1,164 @@
+﻿@page
+@model MicroShop.Webapp.Pages.OrdersModel
+
+@{
+    ViewData["Title"] = "Order History";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* Add custom styling here if needed */
+        body {
+            padding: 20px;
+        }
+
+        #orders-table {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+            #orders-table th,
+            #orders-table td {
+                text-align: center;
+            }
+
+            #orders-table th {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            #orders-table tbody tr:hover {
+                background-color: #f5f5f5;
+            }
+
+            #order-details-container {
+                margin-top: 20px;
+            }
+
+            .product-container {
+                border: 1px solid #ddd;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+
+            .product-title {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .product-description {
+                color: #555;
+                margin-bottom: 10px;
+            }
+
+            .product-price {
+                color: #007bff;
+            }
+    </style>
+</head>
+<body>
+
+
+<h1>Order History</h1>
+
+    <table id="orders-table" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>User Name</th>
+                <th>User Address</th>
+                <th>Tracking Number</th>
+                <th>Order Status</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order rows will be filled here -->
+        </tbody>
+    </table>
+
+<div id="order-details-container">
+    <!-- Product details will be filled here when an order is selected -->
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "https://localhost:45392/Order/GetOrders",
+            contentType: 'application/json',
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (data) {
+                console.log(data);
+                displayOrders(data);
+            },
+            error: function (xhr, status, error) {
+                console.error("Error:", error);
+            }
+        });
+
+            function displayOrders(orders) {
+                var ordersTable = $("#orders-table tbody");
+                var orderDetailsContainer = $("#order-details-container");
+
+                // Iterate through each order
+                orders.forEach(function (order) {
+                    // Add a new row to the table for each order with Bootstrap classes
+                    var row = $("<tr>").attr("data-order-id", order.order_Id);
+                    row.append("<td>" + order.order_Id + "</td>");
+                    row.append("<td>" + new Date(order.created_At).toLocaleString() + "</td>");
+                    row.append("<td>" + order.user_Name + "</td>");
+                    row.append("<td>" + order.user_Address + "</td>");
+                    row.append("<td>" + order.tracking_Number + "</td>");
+                    row.append("<td>" + order.order_Status + "</td>");
+                    row.append("<td>" + order.amount + "</td>");
+
+                    // Append the row to the table
+                    ordersTable.append(row);
+                });
+
+                // Add Bootstrap table class
+                ordersTable.addClass("table");
+
+                // Add click event listener to rows
+                ordersTable.on("click", "tr", function () {
+                    var orderId = $(this).data("order-id");
+                    displayProducts(orderId);
+                });
+
+                function displayProducts(orderId) {
+                    // Find the order with the selected ID
+                    // Find the order with the selected ID
+                    var selectedOrder = orders.find(function (order) {
+                        return order.order_Id === orderId;
+                    });
+
+                    // Display product details for the selected order
+                    var productsContainer = $("#order-details-container");
+                    productsContainer.empty();  // Clear previous product details
+
+                    selectedOrder.products.forEach(function (product) {
+                        var productContainer = $("<div>").addClass("product-container");
+                        productContainer.append("<p class='product-title'><strong>Product:</strong> " + product.name + "</p>");
+                        productContainer.append("<p class='product-description'><strong>Description:</strong> " + product.description + "</p>");
+                        productContainer.append("<p class='product-price'><strong>Price:</strong> $" + product.price.toFixed(2) + "</p>");
+
+                        productsContainer.append(productContainer);
+                    });
+                }
+            }
+    });
+</script>
+
+</body>
+</html>

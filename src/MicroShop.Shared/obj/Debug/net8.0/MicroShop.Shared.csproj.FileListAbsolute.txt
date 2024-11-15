@@ -1,0 +1,11 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\bin\Debug\net8.0\MicroShop.Shared.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\bin\Debug\net8.0\MicroShop.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\bin\Debug\net8.0\MicroShop.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\MicroShop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\MicroShop.Shared.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\MicroShop.Shared.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\MicroShop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\MicroShop.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\refint\MicroShop.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\MicroShop.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Shared\obj\Debug\net8.0\ref\MicroShop.Shared.dll

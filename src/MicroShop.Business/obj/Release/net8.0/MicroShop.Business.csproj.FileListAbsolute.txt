@@ -1,0 +1,17 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Business.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Client.Http.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\bin\Release\net8.0\MicroShop.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.csproj.CopyComplete
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\refint\MicroShop.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\MicroShop.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Business\obj\Release\net8.0\ref\MicroShop.Business.dll

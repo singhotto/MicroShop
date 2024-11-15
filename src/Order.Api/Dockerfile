@@ -1,0 +1,29 @@
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER app
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["NuGet.Config", "."]
+COPY ["src/Order.Api/Order.Api.csproj", "src/Order.Api/"]
+COPY ["src/Order.Business/Order.Business.csproj", "src/Order.Business/"]
+COPY ["src/Order.Repository/Order.Repository.csproj", "src/Order.Repository/"]
+COPY ["src/Order.Shared/Order.Shared.csproj", "src/Order.Shared/"]
+RUN dotnet restore "./src/Order.Api/./Order.Api.csproj"
+COPY . .
+WORKDIR "/src/src/Order.Api"
+RUN dotnet build "./Order.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./Order.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Order.Api.dll"]

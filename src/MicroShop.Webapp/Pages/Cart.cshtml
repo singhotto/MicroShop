@@ -1,0 +1,173 @@
+﻿@page
+@model MicroShop.Webapp.Pages.CartModel
+
+<div class="container mt-4">
+    <h2 class="mb-4">Shopping Cart</h2>
+
+    @if (Model._cartItems != null && Model._cartItems.Any())
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    decimal grandTotal = 0;
+                }
+                @foreach (var cartItem in Model._cartItems)
+                {
+                    <tr>
+                        <td>@cartItem.ProductName</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="@($"decreaseQuantity({cartItem.Id})")">-</button>
+                            <span class="mx-2">@cartItem.Stock_Quantity</span>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="@($"increaseQuantity({cartItem.Id})")">+</button>
+                        </td>
+                        <td>$@cartItem.Price</td>
+                        <td>$@(cartItem.Price * cartItem.Stock_Quantity)</td>
+                        @{
+                            grandTotal += cartItem.Price * cartItem.Stock_Quantity;
+                        }
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total:</strong></td>
+                    <td colspan="2">$<span id="totalAmount">@grandTotal</span></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="mt-4">
+            <h3>Card Information</h3>
+            <form method="post" action="/MicroShop/ProcessPayment">
+                @Html.AntiForgeryToken()
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cardOwner">Card Owner</label>
+                        <input type="text" class="form-control" id="cardOwner" name="cardOwner" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" name="CardNumber" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="expiryMonth">Expiry Month</label>
+                            <input type="text" class="form-control" id="expiryMonth" name="ExpiryMonth" placeholder="MM" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="expiryYear">Expiry Year</label>
+                            <input type="text" class="form-control" id="expiryYear" name="ExpiryYear" placeholder="YYYY" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" name="CVV" required>
+                    </div>
+                </div>
+                
+                <div class="text-right mt-4">
+                    <button type="button" class="btn btn-primary" onclick="makeOrder()">Checkout</button>
+                </div>
+
+            </form>
+        </div>
+    }
+    else
+    {
+        <p>Your shopping cart is empty.</p>
+    }
+</div>
+
+
+<script>
+    async function changeQuantity(op, ItemId) {
+        const operations = ["IncreaseCartItem", "DecreaseCartItem"];
+        $.ajax({
+            type: "PUT",
+            url: "/MicroShop/" + operations[op] + "/" + ItemId,
+            contentType: 'application/json',
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (data) {
+                location.reload();
+            }
+        });
+    }
+
+    function increaseQuantity(itemId) {
+        changeQuantity(0, itemId);
+    }
+
+    function decreaseQuantity(itemId) {
+        changeQuantity(1, itemId);
+    }
+
+    async function makeOrder() {
+        const verificationToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        const Data = {
+            "user_Id": "", // Add the user ID as needed
+            "cardOwner": document.getElementById('cardOwner').value,
+            "cardNumber": document.getElementById('cardNumber').value,
+            "expiry_month": parseInt(document.getElementById('expiryMonth').value),
+            "expiry_year": parseInt(document.getElementById('expiryYear').value),
+            "cvv": parseInt(document.getElementById('cvv').value),
+            "amount": parseFloat((document.getElementById('totalAmount').innerText).replace(",", ".")),
+            "order_Id": 0,
+            "products": [
+    @foreach (var cartItem in Model._cartItems)
+    {
+        <text>
+                    {
+                        "product_Id": '@cartItem.Product_Id',
+                        "name": "@cartItem.ProductName",
+                        "price": @(cartItem.Price.ToString().Replace(",", ".")),
+                        "stock_Quantity": @cartItem.Stock_Quantity
+                                                    },
+        </text>
+    }
+                ]
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:45192/Payment/ProcessPayment",
+            data: JSON.stringify(Data),
+            contentType: 'application/json',
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (data) {
+                console.log(data);
+                console.log(data.payment_Status);
+                if (data.payment_Status == "Payment_OK") {
+                    alert("Payment OK");
+                    $.ajax({
+                        type: "Delete",
+                        url: "/MicroShop/EmptyCart",
+                        contentType: 'application/json',
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            location.reload();
+                        }
+                    });
+                }
+            }
+        });
+
+    }
+</script>
+

@@ -1,0 +1,238 @@
+name: dockercompose8180311725826366132
+services:
+  kafka:
+    container_name: kafka
+    depends_on:
+      zookeeper:
+        condition: service_started
+        required: true
+    environment:
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_BROKER_ID: "1"
+      KAFKA_CFG_ADVERTISED_LISTENERS: PLAINTEXT://kafka
+      KAFKA_CFG_LISTENERS: PLAINTEXT://:9092
+      KAFKA_CFG_ZOOKEEPER_CONNECT: zookeeper:2181
+    image: bitnami/kafka:3.1.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 9092
+        published: "9092"
+        protocol: tcp
+  microshop.webapp:
+    build:
+      context: C:\Users\singh\OneDrive\Documenti\Source\MicroShop
+      dockerfile: src/MicroShop.Webapp/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: microshopwebapp
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\singh\OneDrive\Documenti\Source\MicroShop\config\microshop-appsettings.json
+        target: /app/appsettings.json
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  mssql-server:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: p4ssw0rD
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "2433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mssql-server
+        target: /var/opt/mssql
+        volume: {}
+  order.api:
+    build:
+      context: C:\Users\singh\OneDrive\Documenti\Source\MicroShop
+      dockerfile: src/Order.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: orderapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\singh\OneDrive\Documenti\Source\MicroShop\config\orderapi-appsettings.json
+        target: /app/appsettings.json
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  payment.api:
+    build:
+      context: C:\Users\singh\OneDrive\Documenti\Source\MicroShop
+      dockerfile: src/Payment.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: paymentapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\singh\OneDrive\Documenti\Source\MicroShop\config\paymentapi-appsettings.json
+        target: /app/appsettings.json
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  supply.api:
+    build:
+      context: C:\Users\singh\OneDrive\Documenti\Source\MicroShop
+      dockerfile: src/Supply.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: supplyapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\singh\OneDrive\Documenti\Source\MicroShop\config\supplyapi-appsettings.json
+        target: /app/appsettings.json
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+  warehouse.api:
+    build:
+      context: C:\Users\singh\OneDrive\Documenti\Source\MicroShop
+      dockerfile: src/Warehouse.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: warehouseapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\singh\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  zookeeper:
+    container_name: zookeeper
+    environment:
+      ALLOW_ANONYMOUS_LOGIN: "yes"
+    image: bitnami/zookeeper:3.9.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 2181
+        published: "2181"
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose8180311725826366132_default
+volumes:
+  mssql-server:
+    name: dockercompose8180311725826366132_mssql-server

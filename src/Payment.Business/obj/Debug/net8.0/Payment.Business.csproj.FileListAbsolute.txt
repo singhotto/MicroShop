@@ -1,0 +1,17 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Business.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\bin\Debug\net8.0\Payment.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.csproj.CopyComplete
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\refint\Payment.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\Payment.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Payment.Business\obj\Debug\net8.0\ref\Payment.Business.dll

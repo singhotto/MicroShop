@@ -1,0 +1,27 @@
+{
+    "DetailedErrors": true,
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=mssql-server;Database=MicroShop;User Id=sa;Password=p4ssw0rD;Encrypt=False"
+    },
+    "Kafka": {
+        "ProducerClient": {
+            "BootstrapServers": "kafka"
+        },
+        "AdminClient": {
+            "BootstrapServers": "kafka"
+        },
+        "Topics": {
+            "users": "users"
+        },
+        "ProducerService": {
+            "IntervalSeconds": 5,
+            "DelaySeconds": 1
+        }
+    }
+}

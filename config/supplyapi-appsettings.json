@@ -1,0 +1,27 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "ConnectionStrings": {
+        "SupplyDbContext": "Server=mssql-server;Database=SUPPLY;User Id=sa;Password=p4ssw0rD;Encrypt=False"
+    },
+    "Kafka": {
+        "ProducerClient": {
+            "BootstrapServers": "kafka"
+        },
+        "AdminClient": {
+            "BootstrapServers": "kafka"
+        },
+        "Topics": {
+            "SupplierProducts": "SupplierProducts",
+            "Categories": "Categories"
+        },
+        "ProducerService": {
+            "IntervalSeconds": 5,
+            "DelaySeconds": 1
+        }
+    }
+}

@@ -1,0 +1,15 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\bin\Release\net8.0\MicroShop.Client.Http.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\bin\Release\net8.0\MicroShop.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\bin\Release\net8.0\MicroShop.Client.Http.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\bin\Release\net8.0\MicroShop.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\bin\Release\net8.0\MicroShop.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.csproj.CopyComplete
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\refint\MicroShop.Client.Http.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\MicroShop.Client.Http.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Client.Http\obj\Release\net8.0\ref\MicroShop.Client.Http.dll

@@ -1,0 +1,12 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\bin\Debug\net8.0\MicroShop.Repository.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\bin\Debug\net8.0\MicroShop.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\bin\Debug\net8.0\MicroShop.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\refint\MicroShop.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\MicroShop.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\MicroShop.Repository\obj\Debug\net8.0\ref\MicroShop.Repository.dll

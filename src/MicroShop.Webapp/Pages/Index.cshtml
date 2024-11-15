@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-4">
+    <h2>Featured Products</h2>
+    <div class="row">
+        @{
+            int i = 0; 
+        }
+        @foreach (var product in Model._products)
+        {
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    @{
+                        product.Image = product.Image == "" ? "https://commercial.bunn.com/img/image-not-available.png" : product.Image;
+                    }
+                    <img src="@product.Image" class="card-img-top" alt="Product Image: @product.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">Price: $@product.Price</p>
+                        @{
+                            i++;
+                            string formId = "addToCartForm" + i;
+                        }
+                        <form id="@formId" action="/MicroShop/AddToCart" method="post">
+                            @Html.AntiForgeryToken()
+
+                            <input type="hidden" name="Product_Id" value="@product.Product_Id" />
+                            <input type="hidden" name="Price" value="@product.Price" />
+                            <input type="hidden" name="ProductName" value="@product.Name" />
+
+                            <button type="button" onclick="addToCart('@product.Product_Id', @i)" class="btn btn-primary">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    async function addToCart(id, i) {
+        const form = document.getElementById('addToCartForm'+i);
+        const data = {
+            "userName": "",
+            "product_Id": id,
+            "productName": form.querySelector('input[name="ProductName"]').value,
+            "stock_Quantity": 1,
+            "price": parseFloat(form.querySelector('input[name="Price"]').value)
+        };
+
+        const response = await fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': form.querySelector('input[name="__RequestVerificationToken"]').value
+            },
+            body: JSON.stringify(data)
+        });
+
+        // Handle the response as needed
+        if (response.status == 200) alert("PRODUCT ADDED TO CART");
+    }
+</script>

@@ -1,0 +1,26 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "ConnectionStrings": {
+        "PaymentDbContext": "Server=mssql-server;Database=PAYMENT;User Id=sa;Password=p4ssw0rD;Encrypt=False"
+    },
+    "Kafka": {
+        "ProducerClient": {
+            "BootstrapServers": "kafka"
+        },
+        "AdminClient": {
+            "BootstrapServers": "kafka"
+        },
+        "Topics": {
+            "orders": "orders"
+        },
+        "ProducerService": {
+            "IntervalSeconds": 5,
+            "DelaySeconds": 1
+        }
+    }
+}

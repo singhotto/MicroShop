@@ -1,0 +1,17 @@
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Business.deps.json
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Repository.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Shared.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Shared.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\bin\Debug\net8.0\Warehouse.Repository.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.csproj.AssemblyReference.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.AssemblyInfoInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.AssemblyInfo.cs
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.csproj.CoreCompileInputs.cache
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.csproj.CopyComplete
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\refint\Warehouse.Business.dll
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\Warehouse.Business.pdb
+C:\Users\singh\OneDrive\Documenti\Source\MicroShop\src\Warehouse.Business\obj\Debug\net8.0\ref\Warehouse.Business.dll
